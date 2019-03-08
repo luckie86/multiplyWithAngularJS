@@ -1,0 +1,16 @@
+{
+    "name": "angularjs-workshop",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "json-server --watch data/db.json --static ."
+    },
+    "author": "FE@Dlabs",
+    "license": "MIT",
+    "devDependencies": {
+        "json-server": "0.14.0"
+    },
+    "dependencies": {
+        "angular": "1.7.5",
+        "bootstrap": "4.1.3"
+    }
+}

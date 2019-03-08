@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="utf-8">
+    <title>AngularJS App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="shortcut icon" type="image/png" href="https://freepngimg.com/download/play_button/25647-2-play-button-transparent-image.png"/>
+    <link rel="stylesheet" href="app/app.css">
+</head>
+
+<body>
+
+    <div class="container">
+       
+        <parent-component></parent-component>
+  
+        <numbers-component></numbers-component>
+
+        <sum-component></sum-component>
+
+        
+
+    </div> 
+
+    <!-- JS -->
+    <script src="/node_modules/angular/angular.js"></script>
+    <script src="/app/app.module.js"></script>
+    <script src="/app/parent-component.js"></script>
+    <script src="/app/numbers-component.js"></script>
+    <script src="/app/sum-component.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<div class="card">
+    <h2>Number 1: </h2>
+    <h2>Number 2: </h2>
+    <h1>Result: </h1>
+    <hr>
+    <div class="row">
+        <div class="col-sm-6">
+            <ul ng-repeat="object in $ctrl.list1">
+                <li>
+                    <button class="btn btn-secondary">{{object.value}}</button>
+                </li>
+            </ul>
+        </div>
+        <div class="col-sm-6">
+                <ul ng-repeat="object in $ctrl.list1">
+                    <li>
+                        <button class="btn btn-secondary">{{object.value}}</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
