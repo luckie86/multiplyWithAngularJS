@@ -1,4 +1,4 @@
-## AngularJS example project
+## AngularJS multiply project
 
 This is used as a base for workshop tasks.
 
