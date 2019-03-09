@@ -7,6 +7,34 @@
             templateUrl: "/app/parent-component.html",
             controller: function () {
                 var $ctrl = this;
+
+                $ctrl.$onInit = function () {
+                    $ctrl.first = 0;
+                    $ctrl.second = 0;
+                    $ctrl.multiply = 0;
+                }
+
+                $ctrl.onSelectFirst = function (value) {
+                    $ctrl.first = value;
+                    console.log("dobi vrednost 1", value);
+                    clearMultiply();
+                }
+
+                $ctrl.onSelectSecond = function (value) {
+                    $ctrl.second = value;
+                    console.log("dobi vrednost 2", value);
+                    clearMultiply();
+                }
+
+                $ctrl.onMultiply = function (value) {
+                    $ctrl.multiply = value;
+                    console.log("gre v onMultiply");
+                }
+
+                function clearMultiply () {
+                    $ctrl.multiply = 0;
+                }
+
             }
         });
 })();

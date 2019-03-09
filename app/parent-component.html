@@ -2,10 +2,19 @@
     <h1>Welcome to Multiply with AngularJS</h1>
 </div>
 
-<div>
-    <numbers-component></numbers-component>
+<div class="card">
+    <h2>Number 1: <span ng-if="!$ctrl.first">Select Value</span><span ng-if="$ctrl.first">{{$ctrl.first}}</span></h2>
+    <h2>Number 2: <span ng-if="!$ctrl.second">Select Value</span><span ng-if="$ctrl.second">{{$ctrl.second}}</span></h2>
+    <h1>Result: <span ng-if="$ctrl.multiply>0">{{$ctrl.multiply}}</span></h1>
 </div>
 
 <div>
-    <multiplication-component></sum-component>
+    <numbers-component select-first="$ctrl.onSelectFirst(value)"
+    select-second="$ctrl.onSelectSecond(value)"></numbers-component>
+</div>
+
+<div>
+    <multiplication-component first="$ctrl.first"
+    second="$ctrl.second"
+    multiply="$ctrl.onMultiply(value)"></multiplication-component>
 </div>    
