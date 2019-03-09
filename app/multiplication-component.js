@@ -3,8 +3,8 @@
 
     angular
         .module("app")
-        .component("sumComponent", {
-            templateUrl: "/app/sum-component.html",
+        .component("multiplicationComponent", {
+            templateUrl: "/app/multiplication-component.html",
             controller: function () {
                 var $ctrl = this;
             }

@@ -8,13 +8,7 @@
             controller: function () {
                 var $ctrl = this;
 
-                $ctrl.list1 = [
-                    {value:1},
-                    {value:2},
-                    {value:3},
-                    {value:4},
-                    {value:5}
-                ]
+                $ctrl.list = [10,11,12,13,14,15,16,17,18,19,20]
 
             }
         });
