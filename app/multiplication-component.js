@@ -19,8 +19,7 @@
                 }
 
                 $ctrl.calculate = function () {
-                    $ctrl.multiply = ({value: $ctrl.first*$ctrl.second});
-                    console.log("gre v calculate", $ctrl.multiply);
+                    $ctrl.multiply({value: $ctrl.first*$ctrl.second});
                 }
             }
         });

@@ -16,19 +16,16 @@
 
                 $ctrl.onSelectFirst = function (value) {
                     $ctrl.first = value;
-                    console.log("dobi vrednost 1", value);
                     clearMultiply();
                 }
 
                 $ctrl.onSelectSecond = function (value) {
                     $ctrl.second = value;
-                    console.log("dobi vrednost 2", value);
                     clearMultiply();
                 }
 
                 $ctrl.onMultiply = function (value) {
                     $ctrl.multiply = value;
-                    console.log("gre v onMultiply");
                 }
 
                 function clearMultiply () {
