@@ -23,11 +23,34 @@
                 $ctrl.select = function (number, index){
 
                     if (number === 1) {
+                        $ctrl.first = index;
                         $ctrl.selectFirst({value: index});
                     }
                     else {
+                        $ctrl.second = index;
                         $ctrl.selectSecond({value: index}); 
                     }
+                }
+            }
+        })
+
+        .directive("onClick", function () {
+            return {
+                restrict: "A",
+                 scope: {
+                     number: "<"
+                 },
+                link: function ($scope, element, attrs) {
+                    element.addClass("btn btn-secondary");
+                    element.on("click", function () {
+                        if (element.hasClass("btn btn-secondary")) {
+                            element.removeClass("btn btn-secondary");
+                            element.addClass("btn btn-danger");
+                        } else {
+                            element.removeClass("btn btn-danger");
+                            element.addClass("btn btn-secondary");
+                        } 
+                    });
                 }
             }
         });

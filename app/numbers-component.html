@@ -3,16 +3,18 @@
         <div class="col-sm-6">
             <ul ng-repeat="number in $ctrl.list1">
                 <li>
-                    <button class="btn btn-secondary"
-                    ng-click="$ctrl.select(1,number)">{{number}}</button>
+                    <button
+                    ng-click="$ctrl.select(1,number)"
+                    on-click number ="$ctrl.first">{{number}}</button>
                 </li>
             </ul>
         </div>
         <div class="col-sm-6">
             <ul ng-repeat="number2 in $ctrl.list2">
                 <li>
-                    <button class="btn btn-secondary"
-                    ng-click="$ctrl.select(2,number2)">{{number2}}</button>
+                    <button
+                    ng-click="$ctrl.select(2,number2)"
+                    on-click number="$ctrl.second">{{number2}}</button>
                 </li>
             </ul>
         </div>
