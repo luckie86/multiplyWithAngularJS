@@ -43,6 +43,7 @@
                 link: function ($scope, element, attrs) {
                     element.addClass("btn btn-secondary");
                     element.on("click", function () {
+                        console.log($scope.number);
                         if (element.hasClass("btn btn-secondary")) {
                             element.removeClass("btn btn-secondary");
                             element.addClass("btn btn-danger");
