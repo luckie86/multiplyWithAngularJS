@@ -33,5 +33,21 @@
                 }
 
             }
+        })
+
+        .directive("onResult", function () {
+            return {
+                restrict: "E",
+                link: function ($scope, element, attrs) {
+                    if(element[0].innerText.length>0) {
+                        if (!element.hasClass()) {
+                            element.addClass("alert alert-warning");
+                        } else {
+                            element.removeClass("alert alert-warning");
+                        } 
+                    }
+                }
+            }
         });
+
 })();

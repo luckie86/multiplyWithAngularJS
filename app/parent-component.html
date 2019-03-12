@@ -5,7 +5,7 @@
 <div class="card">
     <h2>Number 1: <span ng-if="!$ctrl.first">Select Value</span><span ng-if="$ctrl.first">{{$ctrl.first}}</span></h2>
     <h2>Number 2: <span ng-if="!$ctrl.second">Select Value</span><span ng-if="$ctrl.second">{{$ctrl.second}}</span></h2>
-    <h1>Result: <span ng-if="$ctrl.multiply>0">{{$ctrl.multiply}}</span></h1>
+    <h1>Result: <span ng-if="$ctrl.multiply>0"><on-result>{{$ctrl.multiply}}</on-result></span></h1>
 </div>
 
 <div>
